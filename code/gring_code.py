@@ -166,8 +166,8 @@ class gring(DloGen):
 
 
             # Constants for the square dimensions and spacing
-            SQUARE_SIZE = 0.16
-            MIN_SPACING = 0.18
+            SQUARE_SIZE = 0.16 # hardcoded... not ideal
+            MIN_SPACING = 0.18 # hardcoded... not ideal
             OFFSET = (minpSD - SQUARE_SIZE)/2
     
             # Calculate the center coordinates of the metal perimeter
@@ -210,8 +210,6 @@ class gring(DloGen):
             )
 
 
-
-            # Ensure cleanup of objects if necessary
             psdRect1.destroy()
             psdRect2.destroy()
             actRect1.destroy()
@@ -265,8 +263,6 @@ class gring(DloGen):
             fgXor([actRect1], [actRect2], activlayer)
             fgXor([met1Rect1], [met1Rect2], met1layer)
 
-
-            # Constants for the square dimensions and spacing
             SQUARE_SIZE = 0.16
             MIN_SPACING = 0.18
             OFFSET = (minpSD - SQUARE_SIZE)/2
@@ -278,7 +274,6 @@ class gring(DloGen):
             bl_to_tl = self.w - (OFFSET + SQUARE_SIZE/2) * 2 
             tl_to_tr = self.l - (OFFSET + SQUARE_SIZE/2) * 2 
 
-            # Generate y-positions for vertical and horizontal placement
             y_positions_vert, y_spacing_vert = calculate_points_on_line(bl_to_tl, MIN_SPACING, SQUARE_SIZE)
             x_positions_horiz, x_spacing_horiz = calculate_points_on_line(tl_to_tr, MIN_SPACING, SQUARE_SIZE)
 
@@ -286,20 +281,19 @@ class gring(DloGen):
             y_positions_vert = adjust_positions(y_positions_vert, OFFSET)
             x_positions_horiz = adjust_positions(x_positions_horiz, OFFSET)
 
-            # Create vertical squares along left and right
             calculate_and_create_squares(
                 locintlayer,
-                [center_x, self.l - (SQUARE_SIZE + OFFSET)],  # Left and right x-coordinates
+                [center_x, self.l - (SQUARE_SIZE + OFFSET)], 
                 y_positions_vert,
                 SQUARE_SIZE,
                 grid_res
             )
 
-            # Create horizontal squares along top and bottom
+        
             calculate_and_create_squares(
                 locintlayer,
                 x_positions_horiz,
-                [center_y, self.w - (SQUARE_SIZE + OFFSET)],  # Bottom and top y-coordinates
+                [center_y, self.w - (SQUARE_SIZE + OFFSET)],  
                 SQUARE_SIZE,
                 grid_res
             )
