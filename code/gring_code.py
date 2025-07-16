@@ -220,7 +220,7 @@ class gring(DloGen):
             calculate_and_create_squares(
                 locintlayer,
                 x_positions_horiz,
-                [center_y, self.w - (SQUARE_SIZE + OFFSET)],  # Bottom and top y-coordinates change to - 0.26 to get back
+                [center_y, self.w - (SQUARE_SIZE + OFFSET)],
                 SQUARE_SIZE,
                 grid_res
             )
