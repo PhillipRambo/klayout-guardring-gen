@@ -110,8 +110,11 @@ Use the DRC to verify compliance and adjust dimensions as needed.
 ## 📚 Learn More
 
 To learn more about open-source analog/mixed-signal IC design, visit the official IHP Open PDK Analog course:
+
 👉 https://github.com/IHP-GmbH/IHP-AnalogAcademy
+
 To learn more about the Open Source PDK visit the official github repository:
+
 👉 https://github.com/IHP-GmbH/IHP-Open-PDK
 
 ---
