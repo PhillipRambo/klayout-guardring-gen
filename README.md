@@ -72,12 +72,12 @@ Once installed, you will see the new PCell in the KLayout device list.
 In the image below:
 - **Left:** NTAP  
 - **Right:** PTAP  
+<p align="center"> <img src="media/tap_ring" width="800" height="700" /> </p>
 
-![[tap_ring.png]]
 
 You can choose between the two by opening the PCell settings dialog:
+<p align="center"> <img src="media/gui.png" width="800" height="700" /> </p>
 
-![[gui.png]]
 
 These PCells are based on the Open PDK tapring devices but include modifications to ensure **LVS compatibility**.
 
@@ -97,16 +97,14 @@ The default PCells in the PDK are **not LVS recognizable** without modifications
 - Surround the active region with `nBuLay.drawing`.
 
 Here’s what the built-in tap devices look like:
+<p align="center"> <img src="media/tap_devices.png" width="800" height="700" /> </p>
 
-![[tap_devices.png]]
 
 ### Example: LVS-Ready NTAP Implementation
-
-![[ntap_impimentation.png]]
+<p align="center"> <img src="media/ntap_impimentation.png" width="800" height="700" /> </p>
 
 ### Example: LVS-Ready PTAP Implementation
-
-![[Ptap.png]]
+<p align="center"> <img src="media/Ptap.png" width="800" height="700" /> </p>
 
 Use the DRC to verify compliance and adjust dimensions as needed.
 
