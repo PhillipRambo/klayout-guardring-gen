@@ -86,11 +86,12 @@ The default PCells in the PDK are **not LVS recognizable** without modifications
 ### NTAP
 - Add a **`sub!`** text label on the `TEXT.drawing` layer.
 - Surround the structure with `Substrate.drawing`.
-- Use a ring width of **at least 1.5 µm**.
 
 ### PTAP
 - Add a **`well`** text label on the `TEXT.drawing` layer.
 - Surround the active region with `nBuLay.drawing`.
+- Surrounding nBulay should be of certain widht (\approx 1.5 \mu should be sufficient)
+- Consult DRC for the surrounding nBulay
 
 Here’s what the built-in tap devices look like:
 <p align="center"> <img src="media/tap_devices.png" width="800" height="700" /> </p>
