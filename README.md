@@ -90,7 +90,7 @@ The default PCells in the PDK are **not LVS recognizable** without modifications
 ### PTAP
 - Add a **`well`** text label on the `TEXT.drawing` layer.
 - Surround the active region with `nBuLay.drawing`.
-- Surrounding nBulay should be of certain widht (\approx 1.5 \mu should be sufficient)
+- Surrounding nBulay should be of certain widht $(\approx 1.5\ \mu\text{m})$ should be sufficient.
 - Consult DRC for the surrounding nBulay
 
 Here’s what the built-in tap devices look like:
