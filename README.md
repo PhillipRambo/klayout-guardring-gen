@@ -20,10 +20,6 @@ These cells closely follow the style of native PCells in the IHP PDK and are des
 
 1. **Clone this repository:**
 
-    ```bash
-    git clone https://github.com/your-username/klayout-guardring-generator.git
-    ```
-
 2. **Copy the `gring_code` folder into the IHP PDK PCell directory:**
 
     ```
