@@ -75,7 +75,7 @@ You can choose between the two by opening the PCell settings dialog:
 <p align="center"> <img src="media/gui.png" width="400" height="700" /> </p>
 
 
-These PCells are based on the Open PDK tapring devices but include modifications to ensure **LVS compatibility**.
+These PCells are based on the Open PDK tap devices
 
 ---
 
